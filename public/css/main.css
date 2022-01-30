@@ -26,6 +26,10 @@ body {
   background: #0d192b;
 }
 
+p {
+  font-size: 18px;
+}
+
 .nft_container {
   background: #14253d;
   margin: 20px;
@@ -47,9 +51,23 @@ body {
   color: #00fff7;
 }
 
+.container .nft_image:hover .img_overlay {
+  background: #00fff7;
+  opacity: .1;
+  z-index: 99;
+}
+
 .nft_image {
   width: 100%;
   border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+.img_overlay {
+  position: absolute;
+  width: 375px;
+  height: 575px;
 }
 
 .content {
@@ -152,9 +170,15 @@ body {
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: #8bacda;
 }
 
 .attribution a {
-  color: #3e52a3;
+  color: white;
+  cursor: pointer;
+}
+
+.attribution a:hover {
+  color: #00fff7;
 }
 /*# sourceMappingURL=main.css.map */
