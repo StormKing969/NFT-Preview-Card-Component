@@ -15,6 +15,7 @@ body {
     align-items: center;
     justify-content: center; 
     background: $very-dark-blue-main-bg;
+    margin: 0 auto;
 }
 
 p {
@@ -40,25 +41,54 @@ p {
             color: $cyan;
         }
     }
-
-    .nft_image:hover .img_overlay {
-        background: $cyan;
-        opacity: .1;
-        z-index: 99;
-    }
 }
 
 .nft_image {
-    width: 100%;
+    width: 300px;
+    height: 300px;
     border-radius: 15px;
     cursor: pointer;
-    position: relative;
+    position: absolute;
+    top: 16%;
+    z-index: 1;
 }
 
 .img_overlay {
-    position: absolute;
-    width: 375px;
-    height: 575px;
+    display: block;
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+    
+    &:hover {
+        background: $cyan;
+        opacity: .5;
+        
+        // &::after {
+        //     content: url("../../images/icon-view.svg");
+        //     display: block;
+        //     position: absolute;
+        //     top: 45%;
+        //     left: 40%;
+        //     opacity: 1;
+        // }
+
+        .img_hover {
+            display: inline-block;
+            position: absolute;
+            top: 45%;
+            left: 40%;
+        }
+    }
+}
+
+.img_hover {
+    display: none;
+    z-index: 3;
+    opacity: 1;
 }
 
 .content {
