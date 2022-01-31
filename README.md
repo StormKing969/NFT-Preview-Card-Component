@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/StormKing969/NFT-Preview-Card-Component](https://github.com/StormKing969/NFT-Preview-Card-Component)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://pedantic-varahamihira-04f168.netlify.app/](https://pedantic-varahamihira-04f168.netlify.app/)
 
 ## My process
 
