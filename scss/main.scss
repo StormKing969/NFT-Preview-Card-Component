@@ -43,16 +43,6 @@ p {
     }
 }
 
-.nft_image {
-    width: 300px;
-    height: 300px;
-    border-radius: 15px;
-    cursor: pointer;
-    position: absolute;
-    top: 16%;
-    z-index: 1;
-}
-
 .img_overlay {
     display: block;
     width: 300px;
@@ -61,11 +51,10 @@ p {
     cursor: pointer;
     padding: 20px;
     position: relative;
-    z-index: 2;
     
     &:hover {
         background: $cyan;
-        opacity: .5;
+        opacity: .9;
         
         // &::after {
         //     content: url("../../images/icon-view.svg");
@@ -81,14 +70,29 @@ p {
             position: absolute;
             top: 45%;
             left: 40%;
+            z-index: 3;
+        }
+
+        .nft_image {
+            z-index: -1; 
+            opacity: .5;
         }
     }
 }
 
+.nft_image {
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
 .img_hover {
     display: none;
-    z-index: 3;
-    opacity: 1;
 }
 
 .content {
